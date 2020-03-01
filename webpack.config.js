@@ -8,20 +8,26 @@ module.exports = {
     filename: "index_bundle.js",
     publicPath: "/"
   },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './',
+  },
   module: {
     rules: [
       {
         test: /\.js|\.jsx$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: path.resolve('./src/index.html'),
     })
   ]
 };
