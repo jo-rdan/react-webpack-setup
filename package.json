@@ -4,8 +4,10 @@
   "description": "Setup React app from scratch",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production ",
+    "postinstall": "webpack -p",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/jo-rdan/react-webpack-setup#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
