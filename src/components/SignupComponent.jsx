@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { createBrowserHistory } from 'history';
 import apiCall from '../utils/apiCall';
+import { Link } from "react-router-dom";
 
 class SignupComponent extends Component {
 

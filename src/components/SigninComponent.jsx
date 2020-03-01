@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { createBrowserHistory } from 'history';
+import { Link } from "react-router-dom";
+
 import apiCall from '../utils/apiCall';
 class SigninComponent extends Component {
 
@@ -43,6 +45,8 @@ class SigninComponent extends Component {
                   console.log('error', error.message);
                }
             }}>Submit</button>
+            <p>Don't have an account?<Link to="/signup">Signup</Link></p>
+
          </div>
       )
    }
