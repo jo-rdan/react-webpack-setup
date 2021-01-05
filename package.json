@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/jo-rdan/react-webpack-setup#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "history": "^4.10.1",
     "react": "^16.13.0",
